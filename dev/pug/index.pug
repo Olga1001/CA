@@ -1,0 +1,427 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	img.bg-fixed_1(src="images/shield.svg", alt="shield")
+	img.bg-fixed_2(src="images/user.svg", alt="user")
+	section.offer 
+		.offer-bottom 
+			p.date 
+				|02 Jun 2020    
+				span |    
+				img.icon-eye(src="images/eye-regular.svg", alt="eye") 
+				|15
+			h1.title How to Delete Inquiries From Your Credit Report
+			.flex-wrap
+				+tags("SEVERAL CASES", "active")
+				+tags("ADDRESSES OF THE AGENCIES")
+				+tags("REMOVAL REQUEST")
+				+tags("CREDIT HISTORY")
+				+tags("CREDIT REPORT ERRORS")
+	section.main 
+		.col-left
+			.card.card-big.col-50.col-50
+				a.title-h2(href="#")
+					span.line-clamp BANKRUPTCY
+				.lines
+				a(href="#")
+					img.card__img.card-big__img(src="images/layer.jpg", alt="layer")
+				.card__content
+					div
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+					
+						a.card__name(href="#") Bankruptcy: Chapter-10
+						p.text.line-clamp-3 When consumers’ debts have exceeded their income, they may have the option of filing... 
+					a.btn_v2(href="#") Bankruptcy
+			.card.card-big.col-50
+				a.title-h2(href="#")
+					span.line-clamp TCPA - TELEPHONE CONSUMER PROTECTION ACT
+				.lines
+				a(href="#")
+					img.card__img.card-big__img(src="images/layer.jpg", alt="layer")
+				.card__content
+					div
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+					
+						a.card__name(href="#") Bankruptcy: Chapter-10
+						p.text.line-clamp-3 When consumers’ debts have exceeded their income, they may have the option of filing... 
+					.flex-wrap
+						a.btn_v2(href="#") COMPENSATION
+						a.btn_v2(href="#") ROBOCALLS
+			.col-50.flex-wrap.slider
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-13
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-7
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury in Car Accidents
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+			.col-50
+				ul.card-list.slider
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+			.col-100
+				.lineside
+				a.title-h2(href="#")
+					span.line-clamp FDCPA - FAIR DEBT COLLECTIONS PRACTICES ACT
+				.lines.lines-small
+
+			.col-45 
+				.card.card-medium 
+					a(href="#")
+						img.card__img.card-medium__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+						a.card__name(href="#") FDCPA - Fair Debt Collections Practices Act
+						p.text Fa vel esse homero expetenda. Ad per diam alia aliquando. Augue dignissim dissentiet ut per. Accusata consulatu id duo, ex pri case omnis accumsan.
+						.flex-wrap
+							a.btn_v2(href="#") COMPENSATION
+							a.btn_v2(href="#") ROBOCALLS
+			.col-55.flex-wrap.slider
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-13
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-7
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury in Car Accidents
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+			.col-100.flex-wrap 
+				.lineside.lineside-right 
+				.card.card-big.col-odd.col-50.pt-10
+					a.title-h2(href="#")
+						span.line-clamp BANKRUPTCY
+					.lines
+					a(href="#")
+						img.card__img.card-big__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						div
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+						
+							a.card__name(href="#") Bankruptcy: Chapter-10
+							p.text.line-clamp-3 Personal Injury in Car Accidents Car accidents can be traumatic and life-changing events for those involved -- but survivors or their loved ones should move... 
+						.flex-wrap
+							a.btn_v2(href="#") TRAUMATIC
+							a.btn_v2(href="#") INJURY
+							a.btn_v2(href="#") ACCIDENT
+				.card.card-big.col-even.col-50.pt-10
+					a.title-h2(href="#")
+						span.line-clamp AMERICANS WITH DISABILITIES ACT
+					.lines
+					a(href="#")
+						img.card__img.card-big__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						div
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+						
+							a.card__name(href="#") Tired of Getting Robocalls?
+							p.text.line-clamp-3 Federal regulators and state attorneys general are feeling... 
+						.flex-wrap
+							a.btn_v2(href="#") COMPENSATION
+							a.btn_v2(href="#") ROBOCALLS
+			.col-50.flex-wrap.slider
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-13
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-7
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury in Car Accidents
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+			.col-50
+				ul.card-list.slider
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+					li.card-item 
+						a(href="#")
+							img.card__img.card-list__img(src="images/layer.jpg", alt="layer")
+						.card-list__content
+							a.card__name.line-clamp(href="#") Spam Text and Junk Fax
+							p.text.line-clamp When consumers’ debts have exceeded their income, they may have the option of filing... 
+							.flex-center-between
+								p.card__date 21 May 2020
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+									|15
+			.col-100
+				.lineside
+				a.title-h2(href="#")
+					span.line-clamp CREDIT REPORTING ERRORS
+				.lines.lines-small
+			.col-45 
+				.card.card-medium 
+					a(href="#")
+						img.card__img.card-medium__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+						a.card__name(href="#") Automated housing discrimination
+						p.text Automated housing discrimination Car accidents can be traumatic and life-changing events for those involved -- but survivors or their loved ones should move quickly to determine if they are entitled to compensation for their injuries.
+						.flex-wrap
+							a.btn_v2(href="#") TRAUMATIC
+							a.btn_v2(href="#") INJURY
+							a.btn_v2(href="#") ACCIDENT
+			.col-55.flex-wrap.slider
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-13
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-7
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury in Car Accidents
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+		.col-right 
+			h2.title-h2
+				span.line-clamp FEATURED NEWS
+			.lines
+			ul.card-list_v2
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Personal Injury in Car Accidents
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Automated housing discrimination 
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Telemarketer Harassment and Robo -calls
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Frequently Asked Questions - FAQ
+			
+			h2.title-h2.mt-45
+				span.line-clamp EDITORS CHOICE
+			.lines
+			ul.card-list_v2
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Personal Injury in Car Accidents
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Automated housing discrimination 
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Telemarketer Harassment and Robo -calls
+				li.card-item_v2
+					a(href="#")
+						img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+					.card-item_v2__content 
+						a.card__name(href="#") Frequently Asked Questions - FAQ
