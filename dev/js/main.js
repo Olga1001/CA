@@ -29,4 +29,15 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $(".header-nav").slideToggle(300);
   });
+
+  $(".select-item").click( function(e) {
+    e.preventDefault();
+    $(this).closest(".select").toggleClass('active').find(".select-drop").slideToggle(300);
+  });
+  $(".select-option").click( function() {
+    let textOption = $(this).text();
+    $(this).addClass('active').siblings().removeClass('active');
+    $(this).closest(".select").removeClass('active').find(".select-item").addClass('active').find("span").text(textOption);
+    $(this).closest(".select").find(".select-drop").slideUp(300);
+  });
 })

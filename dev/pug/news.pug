@@ -1,0 +1,238 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	img.bg-fixed_1(src="images/shield.svg", alt="shield")
+	img.bg-fixed_2(src="images/user.svg", alt="user")
+	
+	ul.breadcrumbs
+		li.breadcrumbs__item
+			a.breadcrumbs__link(href="")
+				img.breadcrumbs__img(src="images/blank-house.svg", alt="icon home")
+		+breadcrumb('Practice Areas','#')
+		+breadcrumb('Credit Reporting Errors','#')
+		+breadcrumb('Identity Theft How Does it Happen - How to Fix It')
+	
+	section.section-article.flex-wrap
+		.col-left
+			article.col-100.article
+				.article__head
+					h1.title.c-dark Identity Theft How Does it Happen - How to Fix It 
+					.flex-wrap.flex-center-between
+						ul.flex-align-center.list.d-md-hide
+							li
+								p.text Attorney Lawyer
+							li.list-type
+								a.text(href="#") 02 Jun 2020
+							li.list-type
+								p.eye
+									img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye")
+									|15
+						div
+							.user
+								img.avatar(src="images/avatar.jpg", alt="avatar")
+								.user-col
+									p.text Author
+									a.link(href="#") Joseph Morgan
+									.flex-align-center
+										p.text 02 JUN 2020
+										p.eye
+											img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye")
+											|15
+							.flex-wrap 
+								a.social-gray(href="#")
+									+icon("facebook-f-brands")
+								a.social-gray(href="#")
+									+icon("twitter-brands")
+								a.social-gray(href="#")
+									+icon("telegram-plane-brands")
+								a.social-gray(href="#")
+									+icon("get-pocket-brands")
+								a.social-gray(href="#")
+									+icon("linkedin-in-brands")
+								a.social-gray(href="#")
+									+icon("whatsapp-brands")
+							.d-md-show
+								.flex-wrap.tags-colors.pt-10
+									+tags("SEVERAL CASES", "active")
+									+tags("ADDRESSES OF THE AGENCIES")
+									+tags("REMOVAL REQUEST")
+									+tags("CREDIT HISTORY")
+									+tags("CREDIT REPORT ERRORS")
+				img.article__img(src="images/article-img.jpg", alt="img")
+
+				.article__content
+					h2.title-h2 Identity Theft!
+					p.article__text Identity theft can seriously harm consumers' livelihoods and financial security, and they may not even realize that they are victims of a crime until they know that their credit was destroyed as a result of fraudulent purchases.
+					p.article__text Consumers should always take basic steps to protect their personal information both on the Internet and in the physical space in order to protect themselves from identity thieves, and this includes monitoring their credit to monitor any suspicious activity.
+					p.article__text But even vigilant consumers can become victims of cybercriminals who use increasingly sophisticated methods to steal information from their victims and evade law enforcement. In addition, online fraudsters may find it difficult to catch police officers, as crimes are often committed across national and international borders.
+					p.article__text Repairing the damage that identity theft can cause a victim's credit score is often a long and difficult process, but an experienced team from Consumer Attorneys is always ready to help.
+				
+				.article__content
+					h2.title-h2 What consumers can do to protect themselves?
+					p.article__text As the old saying goes: an ounce of prevention is worth a pound of cure.
+					p.article__text Consumers should always follow hygiene rules on the Internet to protect themselves from identity theft - do not open suspicious-looking emails, do not share confidential information with unreliable sources, and do not use the same password for multiple accounts, and these are just a few of them.
+					p.article__text But online scammers can obtain information about consumers through other means, such as information that they can find in lost or stolen wallets, especially social security cards. Tech thieves can hack smartphones, personal computers, and business computers.
+					p.article__text In addition, consumers may not be aware that they have become victims of identity theft until months or even years have passed, often when they apply for a loan or credit card and receive an unpleasant surprise when they find out that the fraudster used their name. incur large expenses and skip the bill.
+
+				.article__content
+					h2.title-h2 How can help Consumer Attorneys?
+					p.article__text Fortunately, victims of identity theft have ways to fight back and even regain their reputation.
+					p.article__text Consumer Attorneys can help consumers find the best way to save their credit - and possibly hold responsible parties accountable for their damage and compensate the victims.
+					p.article__text Under the Fair Credit Reporting Act, victims of identity fraud can file a lawsuit with the credit bureaus to correct their records and may even receive financial rewards. And they will have a big dog in the fight with experienced lawyers on their side.
+					p.article__text Consumer Attorneys lawyers can work to clean up inaccurate information from consumer records and take on debt collectors who try to collect bills for fraudulent purchases. They can help eliminate fraudulent accounts that lower their credit scores, and take on large credit bureaus that report false information.
+
+				.flex-wrap.tags-colors.mt-30.d-md-hide
+					+tags("SEVERAL CASES", "active")
+					+tags("ADDRESSES OF THE AGENCIES")
+					+tags("REMOVAL REQUEST")
+					+tags("CREDIT HISTORY")
+					+tags("CREDIT REPORT ERRORS")
+				.d-md-show.taps
+					a.link-tap(href="#") FDCPA - Fair Debt Collections Practices Act
+					a.link-tap(href="#") Is Chapter 13 right for you?
+					a.link-tap(href="#") Considering Chapter 7
+					a.link-tap(href="#") Spam Text and Junk Fax
+					a.link-tap(href="#") Telemarketer Harassment and Robo-calls
+					a.link-tap(href="#") Personal Injury in Car Accidents
+					a.link-tap(href="#") Attorneys Help Accident Victims
+					a.link-tap(href="#") Automated housing discrimination
+					a.link-tap(href="#") Renters’ Rights
+			
+		.col-right
+			.d-md-hide 
+				h2.title-h2
+					span.line-clamp FEATURED NEWS
+				.lines
+				ul.card-list_v2
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Personal Injury in Car Accidents
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Automated housing discrimination 
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Telemarketer Harassment and Robo -calls
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Frequently Asked Questions - FAQ
+				
+				h2.title-h2.mt-45
+					span.line-clamp EDITORS CHOICE
+				.lines
+				ul.card-list_v2
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Personal Injury in Car Accidents
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Automated housing discrimination 
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Telemarketer Harassment and Robo -calls
+					li.card-item_v2
+						a(href="#")
+							img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+						.card-item_v2__content 
+							a.card__name(href="#") Frequently Asked Questions - FAQ
+			h2.title-h2.mt-45
+				span.line-clamp be in touch
+			.lines
+			form.form
+				p.text If you have any questions, to contact the site administration, use:
+				label 
+					input(type="text" placeholder="Name*" required)
+				label 
+					input(type="email" placeholder="Email*" required)
+				label 
+					input(type="text" placeholder="Phone*" required)
+				label 
+					.select 
+						.select-item 
+							span Subject*
+							img(src="images/angle-down-solid.svg", alt="arrow")
+						ul.select-drop
+							li.select-option.active Subject
+							li.select-option Subject2
+				label
+					textarea(cols="3", rows="7" placeholder="Message")
+				button.btn(type="submit") Send
+		.col-left 
+			.col-100
+				h2.title-h2
+					span.line-clamp similar articles
+				.lines.lines-small
+			.col-45 
+				.card.card-medium 
+					a(href="#")
+						img.card__img.card-medium__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+						a.card__name(href="#") FDCPA - Fair Debt Collections Practices Act
+						p.text Fa vel esse homero expetenda. Ad per diam alia aliquando. Augue dignissim dissentiet ut per. Accusata consulatu id duo, ex pri case omnis accumsan.
+						.flex-wrap
+							a.btn_v2(href="#") COMPENSATION
+							a.btn_v2(href="#") ROBOCALLS
+			.col-55.flex-wrap.slider.b-none
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-13
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Bankruptcy: Chapter-7
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury in Car Accidents
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+				.card.card-small
+					a(href="#")
+						img.card__img.card-small__img(src="images/layer.jpg", alt="layer")
+					.card__content
+						a.card__name.line-clamp(href="#") Personal Injury
+						.flex-center-between
+							p.card__date 21 May 2020
+							p.eye
+								img.icon-eye-gray(src="images/eye-regular-gray.svg", alt="eye") 
+								|15
+			

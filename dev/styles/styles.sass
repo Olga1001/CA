@@ -13,24 +13,40 @@
     box-sizing: border-box
 
 *::-webkit-input-placeholder
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
   line-height: 1
+  font-weight: 400
+  color: #cccccc
 
 *:-moz-placeholder
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
   line-height: 1
+  font-weight: 400
+  color: #cccccc
 
 *::-moz-placeholder
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
   line-height: 1
+  font-weight: 400
+  color: #cccccc
 
 *:-ms-input-placeholder
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
   line-height: 1
+  font-weight: 400
+  color: #cccccc
 
-// body input:focus:required:invalid,
-// body textarea:focus:required:invalid
-//   color: $color5
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: $color2
 
-// body input:required:valid,
-// body textarea:required:valid
-//   color: $color5
+body input:required:valid,
+body textarea:required:valid
+  color: $color2
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -84,6 +100,75 @@ body
 img
   display: block
   object-fit: contain
+
+input, textarea
+  background-color: $color3
+  border: 1px solid #f5f5f5
+  border-radius: 3px
+  width: 100%
+  padding: 11px 14px
+  font-size: 14px
+  line-height: 1
+  font-weight: 400
+  color: $color2
+  resize: none
+  appearance: none
+
+.select
+  position: relative
+  &-item
+    display: flex 
+    align-items: center 
+    justify-content: space-between
+    background-color: $color3
+    border: 1px solid #f5f5f5
+    border-radius: 3px
+    padding: 11px 14px
+    line-height: 1
+    font-size: 14px
+    font-weight: 400
+    color: #cccccc
+    cursor: pointer
+    img 
+      width: 15px 
+      height: 15px
+      transition: all 0.3s ease
+    &.active 
+      color: $color2
+  &.active 
+    .select-item
+      img 
+        transform: scale(1,-1)
+
+  &-drop 
+    display: none 
+    position: absolute 
+    left: 0
+    top: calc(100% + 3px)
+    background: #fff
+    width: 100%
+    padding: 5px 0
+    border: 1px solid #f5f5f5
+  &-option
+    border-bottom: 1px solid #fafafa
+    padding: 7px 14px
+    line-height: 1
+    font-size: 13px
+    font-weight: 400
+    cursor: pointer
+    &:last-child
+      border-bottom: none
+
+.form 
+  input, textarea 
+    margin-bottom: 20px
+  .btn 
+    width: 100%
+  .select 
+    margin-bottom: 20px
+  .text
+    margin-bottom: 22px
+    margin-top: -7px
 
 .container
   margin: 0 auto
@@ -433,6 +518,8 @@ img
   padding-top: 10px
 .mt-45
   margin-top: 45px
+.mt-30 
+  margin-top: 30px 
 
 .text 
   font-weight: 400
@@ -553,6 +640,202 @@ img
       outline: none
     &.slick-active button 
       border: 5px solid#d5aa6d
+
+.list
+  li 
+    margin-right: 10px
+  &-type 
+    position: relative
+    padding-left: 12px
+    &:before 
+      content: ''
+      position: absolute
+      left: 0 
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 50%
+      width: 2px 
+      height: 2px
+      background: #d5aa6d
+    .eye 
+      margin-bottom: 0
+  .text
+    padding-top: 0
+
+.c-dark 
+  color: #191514
+
+.social-gray
+  width: 30px
+  height: 30px
+  border: 1px solid #e6e6e6
+  border-radius: 50%
+  margin-right: 10px 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  svg 
+    fill: #cccccc
+    width: 14px 
+    height: 15px
+  &:last-child
+    margin-right: 0
+
+.section-article
+  border-radius: 5px
+  background-color: #ffffff
+  width: 100%
+  padding: 22px 15px
+  margin-bottom: 50px
+  .col-right 
+    padding-top: 15px 
+
+.article 
+  padding-bottom: 30px 
+  border-bottom: 1px solid #f5f5f5
+  margin-bottom: 25px
+  &__head
+    position: relative
+    padding-bottom: 16px
+    margin-bottom: 20px
+    &:before 
+      content: ''
+      position: absolute 
+      bottom: 0
+      left: 0
+      width: 65px
+      height: 4px
+      border-radius: 2px
+      background-color: #d5aa6d
+    .title 
+      position: relative
+      &:before 
+        content: none
+        position: absolute 
+        bottom: -10px
+        left: 0
+        width: 65px
+        height: 4px
+        border-radius: 2px
+        background-color: #d5aa6d
+
+  &__img
+    width: 100% 
+    height: auto
+  &__content
+    padding: 29px 0 15px 15px
+    position: relative
+    &:before 
+      content: ''
+      position: absolute 
+      left: 0 
+      top: 30px 
+      width: 4px
+      height: 56px
+      background-color: #d5aa6d
+    .title-h2 
+      min-height: auto
+      line-height: 22px
+      padding-bottom: 10px
+      text-transform: inherit
+  &__text
+    margin-bottom: 22px
+    line-height: 22px
+    &:last-child
+      margin-bottom: 0
+
+.tags-colors
+  .tag 
+    border-color: #d5aa6d
+    color: #d5aa6d
+    &.active 
+      color: #fff
+
+.breadcrumbs 
+  padding-left: 15px
+  display: flex 
+  align-items: center 
+  overflow-x: auto
+  &__item 
+    float: left
+  &__link 
+    font-size: 14px
+    font-weight: 400
+    color: #ffffff
+    position: relative
+    margin-right: 8px
+    padding: 17px 8px 17px 0
+    display: inline-block
+    flex-shrink: 0
+    white-space: nowrap
+    &.active
+      color: #d5aa6d
+      &:before 
+        content: none
+    &:before 
+      content: ''
+      position: absolute 
+      right: 0 
+      top: 50% 
+      transform: translateY(-50%)
+      width: 2px 
+      height: 2px 
+      border-radius: 50%
+      background: #d5aa6d
+  &__img
+    width: 14px 
+    height: 14px 
+
+.user 
+  display: none
+  align-items: center
+  margin: 23px 0 16px
+  .text, .link
+    color: #cccccc
+    font-size: 14px
+    font-weight: 500 
+    padding: 0
+  .link
+    color: #d5aa6d
+  .eye 
+    margin: 0
+    margin-left: 15px
+
+.avatar 
+  width: 50px
+  height: 50px
+  border-radius: 50% 
+  margin-right: 20px 
+
+.d-md-show 
+  display: none
+
+.slider.b-none
+  border: none
+
+.taps 
+  margin-top: 23px 
+
+.link-tap
+  margin-right: 10px
+  color: #b3b3b3
+  font-size: 14px
+  font-weight: 400
+  transition: all 0.3s ease
+  line-height: 22px
+  position: relative
+  padding-left: 12px
+  &::before
+    content: '' 
+    width: 2px 
+    height: 2px 
+    position: absolute
+    left: 0
+    top: 8px
+    background: #d5aa6d 
+    border-radius: 50%
+  &:hover 
+    color: #d5aa6d
 
 @import "modules/modules";   
 @import "utils/media";

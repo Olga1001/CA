@@ -6,10 +6,10 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp --prod",
-    "style:lint": "stylelint ./dev/styles/**/*.scss --syntax scss",
-    "style:fix": "stylelint './dev/styles/**/*.scss' --syntax scss --fix"
+    "style:lint": "stylelint ./dev/styles/**/*.sass --syntax sass",
+    "style:fix": "stylelint './dev/styles/**/*.sass' --syntax sass --fix"
   },
-  "author": "Саламатин Анатолий",
+  "author": "Olha Zhuravel",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",

@@ -4,3 +4,18 @@ mixin tags(name,active)
 	else 
 		a.tag(href="#")=name
 
+mixin breadcrumb(text,href)
+	li.breadcrumbs__item
+		if(href)
+			a.breadcrumbs__link(href=href)=text
+		else
+			p.breadcrumbs__link.active=text
+
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-" + name + ' ' + mod)
+			use(xlink:href="images/sprite/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-" + name)
+			use(xlink:href="images/sprite/symbol/sprite.svg#" + name)
+			

@@ -6,7 +6,3 @@
 
 ## Start 
 gulp
-
-## Каналы связи
-- [youtube канал](https://www.youtube.com/c/frontcoder)
-- [чат в телеграм](https://t.me/frontcoder)
