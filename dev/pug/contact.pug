@@ -1,0 +1,120 @@
+extends layout/main
+
+block variables
+    -var title = 'Главная страница'
+
+block content
+    ul.breadcrumbs
+        li.breadcrumbs-item
+            a.breadcrumbs__link(href="#")
+                img.breadcrumbs__img(src="images/blank-house.svg", alt="icon home")
+        +breadcrumb("Contact US")
+    section.flex-wrap.section-contact
+        .col-left
+            .col-left__head
+                h1.title.c-dark Contact US
+                .flex-wrap.d-md-hide 
+                    a.social-gray(href="#")
+                        +icon("facebook-f-brands")
+                    a.social-gray(href="#")
+                        +icon("twitter-brands")
+                    a.social-gray(href="#")
+                        +icon("telegram-plane-brands")
+                    a.social-gray(href="#")
+                        +icon("get-pocket-brands")
+                    a.social-gray(href="#")
+                        +icon("linkedin-in-brands")
+                    a.social-gray(href="#")
+                        +icon("whatsapp-brands")
+            .flex-wrap.w-100 
+                .contact-block 
+                    .contact-block_top
+                        img(src="images/placeholder-gray.svg", alt="icon")
+                    p.contact-block_text 300 Cadman Plaza West, 12th Floor Brooklyn, New York 11201
+                .contact-block 
+                    .contact-block_top
+                        img(src="images/telephone-gray.svg", alt="icon")
+                    p.contact-block_text 
+                        span Call us
+                        |+1-929-575-4175
+                .contact-block 
+                    .contact-block_top
+                        img(src="images/message-gray.svg", alt="icon")
+                    p.contact-block_text 
+                        span E-mail
+                        |info@consumerattorneys.com
+            iframe.map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.0327461493944!2d-111.98825932317008!3d40.66968504093693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf34ba7d1d91c8665!2z0KXQvtGD0Lwg0JTQtdC_0L4!5e0!3m2!1sru!2sua!4v1597664547385!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+            form.form
+                .form__head
+                    h2.title-h2.c-dark be in touch
+                p.text If you have any questions, to contact the site administration, use:
+                .flex-wrap
+                    label.label-50
+                        input(type="text" placeholder="Name*" required)
+                    label.label-50
+                        input(type="email" placeholder="Email*" required)
+                    label.label-50
+                        input(type="text" placeholder="Phone*" required)
+                    label.label-50
+                        .select
+                            .select-item
+                                span Subject*
+                                img(src="images/angle-down-solid.svg", alt="arrow")
+                            ul.select-drop
+                                li.select-option.active Subject
+                                li.select-option Subject2
+                label
+                    textarea(cols="3", rows="7" placeholder="Message")
+                .form__bottom
+                    .captcha
+                    button.btn(type="submit") Send
+        .col-right.d-md-hide 
+            h2.title-h2
+                span.line-clamp FEATURED NEWS
+            .lines
+            ul.card-list_v2
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Personal Injury in Car Accidents
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Automated housing discrimination 
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Telemarketer Harassment and Robo -calls
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Frequently Asked Questions - FAQ
+            
+            h2.title-h2.mt-45
+                span.line-clamp EDITORS CHOICE
+            .lines
+            ul.card-list_v2
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Personal Injury in Car Accidents
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Automated housing discrimination 
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Telemarketer Harassment and Robo -calls
+                li.card-item_v2
+                    a(href="#")
+                        img.card__img.card-item_v2__img(src="images/layer.jpg", alt="layer")
+                    .card-item_v2__content 
+                        a.card__name(href="#") Frequently Asked Questions - FAQ
