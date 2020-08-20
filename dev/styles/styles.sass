@@ -210,10 +210,35 @@ input, textarea
 
 .dropdown 
   display: none
+  position: absolute 
+  left: 0
+  top: calc(100% + 2px)
+  width: max-content 
+  background: #fff 
+  z-index: 9
+  box-shadow: 0 0 20px rgba(0, 0, 1, 0.1)
+  min-width: 100%
+  li 
+    a
+      padding: 5px 10px
+      color: #191514
+      font-size: 12px
+      font-weight: 400
+      border-bottom: 1px solid #efefef
+      width: 100% 
+      display: block
+      transition: all 0.3s ease
+      &:hover 
+        color: #d5aa6d
+    &:last-child a
+      border-bottom: none
 
 .arrow-down
   margin-left: 5px
   width: 9px
+  transition: all 0.3s ease
+  &.active 
+    transform: scale(1,-1)
 
 .offer 
   height: 460px
